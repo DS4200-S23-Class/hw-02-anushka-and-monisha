@@ -30,26 +30,12 @@ body {
     text-align: left;
 }
 
-/* Id Tag to set up flexbox for the task abstraction divider */
-#task-abstraction {
-    display: flex;
-    flex-direction: row;
-  }
   
 /* class to set up flexbox display */
 .flex {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-  
-  }
-  
-  
-  /* Id Tag to set up flexbox for the decoration divider */
-  #decoration {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
   
   }
   
