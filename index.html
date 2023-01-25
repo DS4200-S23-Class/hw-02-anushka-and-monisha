@@ -1,14 +1,214 @@
 <!DOCTYPE html>
 <html> 
-
+    <!--creating link to style sheet-->
+    <link rel="stylesheet", href="style.css">
+    <!--titling website-->
+    <title>hw-02</title>
 <head>
     <meta charset=utf-8/>
 </head>
 
 
 <body>
+    <!--Adding Division for Data Abstraction section-->
+    <div id = "data-abstraction">
+        <!--division for info to be displayed-->
+        <div class = "info">
+            <!--centered heading for Dataset Types-->
+            <h1 class = "center">Dataset Types</h1>
+            <!--creating table for data and links and dataset types-->
+                <table class = "myTable">
+                    <tr>
+                        <!--creating column headers in table-->
+                        <th id = "header">Data</th>
+                        <th id = "header">Link</th>
+                        <th id = "header">Dataset Type</th>
+                    </tr>
+                    <!--filling in the information for each dataset-->
+                    <tr>
+                        <td id = "row", class = "center">UFO</td>
+                        <td id = "row", class = "center"><a href="data/UFO.csv">UFO Data Link</a></td>
+                        <td id = "row", class = "center">Table</td>
+                    </tr>
+                    <tr>
+                        <td id = "row", class = "center">Airports</td>
+                        <td id = "row", class = "center"><a href="data/Airports.csv">Airports Data Link</a></td>
+                        <td id = "row", class = "center">Geometry</td>
+                    </tr>
+                    <tr>
+                        <td id = "row", class = "center">Google-Web</td>
+                        <td id = "row", class = "center"><a href = "data/Google-Web.txt">Google-Web Link</a></td>
+                        <td id = "row", class = "center">Networks and Trees</td>
+                    </tr>
+                </table>
+        </div>
+        <!--division for further info on datasets-->
+        <div class = "info">
+            <!--centered header for Data Types-->
+            <h1 class = "center">Data Types</h1>
+            <!--header for UFO data type descriptions-->
+            <h2 class = "left-aligned">UFO</h2>
+            <!--unordered list for data types of rows and columns in the UFO data set-->
+            <ul>
+                <li>Row Type</li>
+                <ul>
+                    <li>Items</li>
+                </ul>
+                <li>Column Types</li>
+                <ul>
+                    <li>Attributes</li>
+                <ul>
+                    <li>Dates</li>
+                    <ul>
+                        <li>Ordered Cyclic</li>
+                    </ul>
+                <li>City</li>
+                <ul>
+                    <li>Categorical</li>
+                </ul>
+                <li>State</li>
+                <ul>
+                    <li>Categorical</li>
+                </ul>
+                <li>Country</li>
+                <ul>
+                    <li>Categorical</li>
+                </ul>
+                <li>Shape</li>
+                <ul>
+                    <li>Categorical</li>
+                </ul>
+                <li>Duration (seconds)</li>
+                <ul>
+                    <li>Ordered Sequential</li>
+                </ul>
+            </ul>
+            </ul>
+            </ul>
+            <!--unordered list for data types of rows and columns in the Airports data set-->
+            <h2 class = "left-aligned">Airports</h2>
+            <ul>
+                <li>Row Type</li>
+                <ul>
+                    <li>Items</li>
+                </ul>
+                <li>Column Type</li>
+                <ul>
+                <li>Positions</li>
+                </ul>
+                <li>Specific Column Types</li>
+                <ul>
+                
+                <li>Airport Name</li>
+                <ul>
+                    <li>Categorical</li>
+                </ul>
+                <li>Latitude</li>
+                <ul>
+                    <li>Position</li>
+                </ul>
+                <li>Longitude</li>
+                <ul>
+                    <li>Position</li>
+                </ul>
+            </ul>
+            </ul>
+            <!--unordered list for data types of rows and columns in the Google-Web data set-->
+            <h2 class = "left-aligned">Google-Web</h2>
+            <ul>
+                <li>Row Type</li>
+                <ul>
+                    <li>Link</li>
+                </ul>
+                <li>Column Type</li>
+                <ul>
+                    <li>Nodes</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Centered Header for Div -->
+    <h1 class = "center">Task Abstraction</h1>
+    <div id = "task-abstraction">
+
+        <!-- internal div to set flex item w/ img + text  -->
+        <div>
+            <img src="C:\img\vis1.png">
+
+            <p>High Level: Discover (the visualization is finding some new revelation about current weather in Vancouver)</p>
+            <p>Medium Level: Locate (the viusalization knows the target of the past 3 days to look for but the location on the graph was originally unknown)</p>
+            <p>Low Level: Identify (the visualization has a single target of the most recent points from the past three days for users to look for) </p>
+            <p>Target: All Data - Outliers (the visualization utilizes all its data but focuses specifically on outliers in the charted change of seasonal Vancouver temperatures) </p>
+
+        </div>
+
+        <!-- 2nd internal div to set flex item w/ img + text -->
+        <div>
+            <img src= "C:\img\vis2.png">
+
+            <p>High Level: Present (the visualization is depicting results of a specific domain to prove a point rather than exploring the data for a new discovery)</p>
+            <p>Medium Level: Browse (the visualization has no clear targets but the user knows the locations of when there is visual bars on specific years) </p>
+            <p>Low Level: Summarize (the users can observe all targets rather than having specific targets in mind)</p>
+            <p>Target: One Attribute - Extremes (the visualization focuses on the specific attribute of the number of times the daily mean temperature exceeded a certain threshold of normal and the extremes which are the years with most times this attributes is recorded is the data of interest to the user)</p>
+
+        </div>
+              
+    </div>
 
 
+    <!-- New Div including SVG Images w/ Flexbox Applied -->
+    <div class = "flex" id= 'decoration'>
+        
+
+        <!-- create svg circle with class circle applied -->
+        <svg width = "100" height= "100">
+            <circle class = "circle" cx = "50" cy = "50" r="25" opacity=".5"/> 
+        </svg>
+    
+
+        <!-- create svg rectangle with rect class applied -->
+        <svg width = "100" height= "100">
+            <rect class = "rect" width="50" height="50" x = "25" y ="25"/>
+        </svg>
+    
+        
+        <svg width = "100" height= "100">
+            <circle class = "circle" cx = "50" cy = "50" r="25" opacity=".5"/>
+        </svg>
+    
+
+        <svg width = "100" height= "100">
+            <rect class = "rect" width="50" height="50" x = "25" y ="25"/>
+        </svg>
+    
+
+        <svg width = "100" height= "100">
+            <circle class = "circle" cx = "50" cy = "50" r="25" opacity=".5"/> 
+        </svg>
+    
+    
+    </div>
+
+
+    <!-- Smaller Centered Header for Acknowledgements -->
+    <h2 class= "center">Acknowledgements</h2>
+
+    <!-- New Div with Listed Sources -->
+    <div>
+        <ul>
+          <li>https://www.w3schools.com/html/html_lists.asp</li>
+          <li>https://www.geeksforgeeks.org/how-to-define-two-column-layout-using-flexbox/</li>
+          <li>https://www.w3schools.com/html/html_id.asp</li>
+          <li>https://css-tricks.com/snippets/css/a-guide-to-flexbox/</li>
+          <li>https://www.javatpoint.com/how-to-change-image-size-in-css</li>
+          <li>https://www.w3schools.com/css/css_align.asp</li>
+          <li>https://www.w3schools.com/howto/howto_css_table_center.asp</li>
+          <li>https://www.w3schools.com/howto/howto_css_table_full_width.asp</li>
+          <li>https://www.w3schools.com/html/html_lists.asp</li>
+          <li>https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_nested</li>
+        </ul>
+    </div>
 </body>
 
 </html>

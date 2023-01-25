@@ -1,0 +1,100 @@
+/*setting page font to Arial*/
+body {
+    font-family: Arial;
+}
+
+/*setting background color for first row in table*/
+#header {
+    background-color:lightblue;
+    border-bottom: 1px solid black;
+}
+
+/*setting border color for rows in table*/
+#row {
+    border-bottom: 1px solid black;
+}
+
+/*setting center text styles for headers*/
+.center {
+    text-align: center;
+}
+
+/*removing dividing lines for each cell in table, leaving just borders for rows*/
+.myTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/*aligns text to the left side of the page*/
+.left-aligned {
+    text-align: left;
+}
+
+/* Id Tag to set up flexbox for the task abstraction divider */
+#task-abstraction {
+    display: flex;
+    flex-direction: row;
+  }
+  
+/* class to set up flexbox display */
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  
+  }
+  
+  
+  /* Id Tag to set up flexbox for the decoration divider */
+  #decoration {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+  
+  }
+  
+  
+  /* Left align + change color of paragraph text */
+  p {
+   text-align: left;
+   color: darkblue;
+  }
+  
+  
+  /* set image size to full size */
+  img {
+      max-width: 100%;  
+      
+  }
+  
+  /* set image size to full size */
+  svg {
+      max-width: 100%;  
+  }
+  
+  
+  /* class to set svg color fill for circle */
+  .circle{
+      fill:indigo;
+  }
+  
+  
+  /* class to set svg border for circle on hover */
+  .circle:hover{
+    stroke: #646464;
+    stroke-width: 3px;
+  }
+  
+  /* class to set svg fill/border for rectangle */
+  .rect {
+    fill: purple;
+    stroke: #646464;
+    stroke-width: 3px;
+  }
+  
+  
+  /* class to set svg fill change for rectangles on hover */
+  .rect:hover {
+    fill: mediumorchid;
+  }
+  
